@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta&family=Manrope:wght@200..800&family=Questrial&display=swap");
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: "Questrial", sans-serif;
+}
+
+input {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+label {
+    display: flex;
+    gap: 5px;
+}
+
+h3 {
+    width: 700px;
+    font-size: 32px;
+}
+
+.form-gap {
+    --bs-gutter-x: 30px;
+    --bs-gutter-y: 30px;
+}
+
+.hero-section {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.form-card {
+    max-width: 720px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 8px;
+    background: #343434cc;
+    height: auto;
+}
+
+.form-control,
+.form-select {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 0;
+    color: #fff;
+    padding-left: 0;
+}
+
+.form-control::placeholder {
+    color: #ffffff;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background: transparent;
+    box-shadow: none;
+    border-bottom-color: #7b61ff;
+    color: #fff;
+}
+
+.btn-submit {
+    width: 200px;
+    height: 48px;
+    background-color: #6f39ae;
+    padding: 12px 40px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    opacity: 1;
+}
+
+.btn-submit:hover {
+    background: #6a52e0;
+}
+
+.btn-submit:disabled,
+.btn-submit[disabled] {
+    background-color: #78599c;
+    cursor: not-allowed;
+}
+
+.form-check-input {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.phone-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.phone-btn {
+    text-align: left;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 8px 0;
+}
+
+.phone-btn:hover {
+    color: #fff;
+    border-bottom-color: #7b61ff;
+}
+
+.phone-placeholder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+}
+
+.phone-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.phone-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.phone-row .form-control,
+.phone-row .form-select {
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.btn-add-phone {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn-add-phone:hover {
+    border-color: #7b61ff;
+    color: #7b61ff;
+}
+
+.phone-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-add-phone {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.btn-add-phone:hover {
+    border-color: #7b61ff;
+    color: #7b61ff;
+}
+
+.phone-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-select {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+.input-select:focus {
+    box-shadow: none;
+    border-bottom-color: #7b61ff;
+}
+
+.input-select option {
+    color: #000;
+}
+
+.country-code {
+    width: 90px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.radio-select {
+    position: relative;
+}
+
+.radio-group {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    color: #2e2e2e;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 6px;
+
+    display: none;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 6px 0;
+}
+
+.radio-group input[type="radio"] {
+    accent-color: #78599c;
+}
+
+.selectBox {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+#about {
+    line-height: 22px;
+    resize: none;
+    overflow-y: auto;
+}
+
+.country-select {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.country-current {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.current-flag {
+    width: 28px;
+}
+
+.arrow {
+    width: 10px;
+    transition: transform 0.3s ease;
+}
+
+.country-select.open .arrow {
+    transform: rotate(-90deg);
+}
+
+.country-panel {
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%) translateX(10px);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    opacity: 0;
+    pointer-events: none;
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.country-select.open .country-panel {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-50%) translateX(0);
+}
+
+.country-title {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    white-space: nowrap;
+}
+
+.country-option img {
+    width: 28px;
+    cursor: pointer;
+}
+
+.phone-field {
+    position: relative;
+}
+
+.phone-field label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.phone-field input:focus + label,
+.phone-field input:not(:placeholder-shown) + label {
+    top: -6px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.phone-row .current-flag {
+    transition:
+        opacity 0.2s ease,
+        width 0.2s ease;
+}
+
+.phone-row.selecting-country .current-flag {
+    opacity: 0;
+    width: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.country-panel input[type="radio"] {
+    accent-color: #ffffff;
+}
+
+.phone-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: text;
+}
+
+.phone-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
+    z-index: 1;
+}
+
+.country-select {
+    position: relative;
+    z-index: 2;
+}
+
+.phone-row .current-flag {
+    transition:
+        opacity 0.2s ease,
+        width 0.2s ease;
+}
+
+.phone-row.selecting-country .current-flag {
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.selectBox {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-right: 10px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.arrow {
+    width: 14px;
+    transition: transform 0.3s ease;
+}
+
+.radio-select.open .arrow {
+    transform: rotate(-180deg);
+}
+
+.radio-group {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    color: #2e2e2e;
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 12px;
+    margin-top: 6px;
+    display: none;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 6px 0;
+}
+
+.radio-group input[type="radio"] {
+    accent-color: #78599c;
+}
+
+.form-check-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: transparent !important;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.form-check-input:hover {
+    border-color: #7b61ff;
+}
+
+.form-check-input:checked::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #fff !important;
+    border-radius: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.form-check-input:checked {
+    background-color: transparent !important;
+    border-color: #fff !important;
+    box-shadow: none !important;
+}
+
+.phone-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-check-input {
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.form-check-label {
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .form-card {
+        padding: 24px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}
